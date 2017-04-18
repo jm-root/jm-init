@@ -1,0 +1,31 @@
+{
+  "name": "jm-init",
+  "version": "1.0.0",
+  "description": "for init using jm-server",
+  "main": "./lib/index",
+  "scripts": {
+    "start": "node node_modules/jm-server/bin/jm-server",
+    "cluster": "node node_modules/jm-server/bin/jm-server --cluster",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jm-root/jm-init.git"
+  },
+  "keywords": [
+    "javascript",
+    "init"
+  ],
+  "author": {
+    "name": "Jeff YU"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jm-root/jm-init/issues"
+  },
+  "homepage": "https://github.com/jm-root/jm-init",
+  "dependencies": {
+    "jm-server": "^0.1.5",
+    "jm-sdk-core": "^0.0.12"
+  }
+}
