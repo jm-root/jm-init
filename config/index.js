@@ -1,10 +1,10 @@
-require('log4js').configure(__dirname + '/log4js.json');
+require('log4js').configure(require('path').join(__dirname, 'log4js.json'))
 var config = {
     development: {
-        port:19980,
+        port:3000,
         trustProxy: 1,
         config_root_init: 'init',
-        sdk: 'http://test.gzleidi.cn:81',
+        gateway: 'http://server.wawa1.gzleidi.cn:81',
         modules: {
             init: {
                 module: process.cwd() + '/lib'
@@ -12,7 +12,7 @@ var config = {
         }
     },
     production: {
-        port: 19990,
+        port: 80,
         trustProxy: 1,
         config_root_init: 'init',
         modules: {

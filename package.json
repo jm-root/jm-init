@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/jm-root/jm-init",
   "dependencies": {
-    "jm-server": "^0.1.5",
-    "jm-sdk-core": "^0.0.12"
+    "jm-server": "^1.0.9"
   }
 }
