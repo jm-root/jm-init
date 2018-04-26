@@ -4,9 +4,8 @@
   "description": "for init using jm-server",
   "main": "./lib/index",
   "scripts": {
-    "start": "node node_modules/jm-server/bin/jm-server",
-    "cluster": "node node_modules/jm-server/bin/jm-server --cluster",
-    "test": "node test"
+    "start": "jm-server",
+    "test": "mocha tests"
   },
   "repository": {
     "type": "git",
@@ -26,5 +25,15 @@
   "homepage": "https://github.com/jm-root/jm-init",
   "dependencies": {
     "jm-server": "^1.0.9"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "chai": "^4.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.4.2"
   }
 }
