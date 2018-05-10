@@ -35,7 +35,7 @@ module.exports = {
     'proxy': 'http://passport-guest-new.app.rancher.internal'
   },
   'passport': {
-    'proxy': 'http://passport.app.rancher.internal'
+    'proxy': 'http://passport.app.rancher.internal/passport'
   },
   'sms': {
     'proxy': 'http://sms.app.rancher.internal/sms'

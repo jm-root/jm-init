@@ -26,8 +26,41 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
+      {
+        'code': '/acl/isAllowed',
+        'title': '鉴权',
+        'permissions': [
+          'get'
+        ],
+        'sort': 0
+      },
+      {
+        'code': '/acl/resources',
+        'title': '资源',
+        'permissions': [
+          'put',
+          'delete',
+          'post',
+          'get'
+        ],
+        'sort': 0,
+        'children': [
+          {
+            'code': '/acl/resources/:id',
+            'title': '指定资源',
+            'permissions': [
+              'put',
+              'delete',
+              'post',
+              'get'
+            ],
+            'sort': 0
+          }
+        ]
+      },
       {
         'code': '/acl/resources',
         'title': '资源',
@@ -160,8 +193,7 @@ module.exports = [
         'code': '/passport/register',
         'title': '注册',
         'permissions': [
-          'post',
-          'put'
+          'post'
         ],
         'sort': 0
       },
@@ -189,6 +221,7 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
       {
@@ -207,6 +240,7 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
       {
@@ -260,6 +294,7 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
       {
@@ -398,6 +433,7 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
       {
@@ -456,6 +492,7 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
       {
@@ -493,6 +530,7 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
       {
@@ -530,6 +568,7 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0
   },
   {
@@ -538,10 +577,11 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
       {
-        'code': '/pay/prepay/:channel',
+        'code': '/pay/prepay',
         'title': '预支付',
         'permissions': [
           'post'
@@ -556,8 +596,17 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
+      {
+        'code': '/oms/nav',
+        'title': '菜单',
+        'permissions': [
+          'get'
+        ],
+        'sort': 0
+      },
       {
         'code': 'nav_acl_manage',
         'title': '权限管理',
@@ -696,6 +745,7 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
       {
@@ -729,6 +779,7 @@ module.exports = [
     'permissions': [
       'get'
     ],
+    'noRecursion': 1,
     'sort': 0,
     'children': [
       {

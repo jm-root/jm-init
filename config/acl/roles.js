@@ -10,9 +10,11 @@ module.exports = [
     description: '访客',
     allows: [
       {resource: '/acl', permissions: ['get']},
+      {resource: '/acl/isAllowed', permissions: ['get']},
       {resource: '/passport', permissions: ['get', 'post']},
       {resource: '/sso', permissions: ['get']},
       {resource: '/user', permissions: ['get']},
+      {resource: '/oms', permissions: ['get']},
       {resource: '/bank', permissions: ['get']},
       {resource: '/shop', permissions: ['get']},
       {resource: '/tb', permissions: ['get']},
@@ -29,7 +31,8 @@ module.exports = [
     description: '已登陆用户',
     parents: ['guest'],
     allows: [
-      {resource: '/user/users/:id', permissions: ['put', 'post', 'delete']}
+      {resource: '/user/users/:id', permissions: ['put', 'post', 'delete']},
+      {resource: '/oms/nav', permissions: ['get']}
     ]
   },
   {
