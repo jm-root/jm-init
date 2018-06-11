@@ -16,7 +16,7 @@ async function initRootUser (id) {
     'roles': ['root']
   })
   console.log(doc)
-  doc = await acl.post('/users/' + id + '/roles', {'roles': ['root']})
+  doc = await acl.put('/users/' + id + '/roles', {'roles': ['root']})
   console.log(doc)
   return doc
 }
