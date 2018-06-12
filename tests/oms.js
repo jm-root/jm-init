@@ -20,4 +20,5 @@ async function initConfigManagers () {
   return doc
 }
 
+initNav()
 initConfigManagers()
