@@ -221,18 +221,8 @@ module.exports = [
     'permissions': [
       'get'
     ],
-    'noRecursion': 1,
-    'sort': 0,
-    'children': [
-      {
-        'code': '/sso/user',
-        'title': '用户信息',
-        'permissions': [
-          'get'
-        ],
-        'sort': 0
-      }
-    ]
+    'noRecursion': 0,
+    'sort': 0
   },
   {
     'code': '/user',
