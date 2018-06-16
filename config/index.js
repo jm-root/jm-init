@@ -4,7 +4,7 @@ var config = {
     port: 3000,
     trustProxy: 1,
     config_root_init: 'init',
-    gateway: 'http://api.jamma.cn:81',
+    gateway: 'http://gateway.test.jamma.cn',
     modules: {
       init: {
         module: process.cwd() + '/lib'
