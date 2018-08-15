@@ -30,6 +30,10 @@ module.exports = {
     'prefix': '/passport/wechat',
     'proxy': 'http://passport-wechat.app.rancher.internal'
   },
+  'passport-mobile': {
+    'prefix': '/passport/mobile',
+    'proxy': 'http://passport-mobile.app.rancher.internal/passport'
+  },
   'passport-guest': {
     'prefix': '/passport/guest',
     'proxy': 'http://passport-guest-new.app.rancher.internal'
