@@ -23,6 +23,9 @@ module.exports = {
   'bank': {
     'proxy': 'http://bank.app.rancher.internal/bank'
   },
+  'return': {
+    'proxy': 'http://return.app.rancher.internal/return'
+  },
   'qrcode': {
     'proxy': 'http://qrcode.app.rancher.internal/qrcode'
   },
