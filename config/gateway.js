@@ -1,7 +1,15 @@
 module.exports = {
+  'mq-kafka': {
+    'proxy': 'http://mq-kafka.app.rancher.internal/mq',
+    'prefix': '/mq'
+  },
   'pay-wechat-notify': {
     'httpProxy': 'http://pay-wechat.app.rancher.internal',
     'prefix': '/pay/wechat/pay.notify'
+  },
+  'pay-wechat-refundnotify': {
+    'httpProxy': 'http://pay-wechat.app.rancher.internal',
+    'prefix': '/pay/wechat/pay.refundnotify'
   },
   'pay-wechat': {
     'proxy': 'http://pay-wechat.app.rancher.internal/pay/prepay/wechat',
@@ -23,15 +31,22 @@ module.exports = {
   'bank': {
     'proxy': 'http://bank.app.rancher.internal/bank'
   },
-  'return': {
-    'proxy': 'http://return.app.rancher.internal/return'
-  },
   'qrcode': {
     'proxy': 'http://qrcode.app.rancher.internal/qrcode'
   },
+  'wechat': {
+    'proxy': 'http://wechat.app.rancher.internal/wechat'
+  },
   'passport-wechat': {
     'prefix': '/passport/wechat',
-    'proxy': 'http://passport-wechat.app.rancher.internal'
+    'proxy': 'http://passport-wechat.app.rancher.internal/passport'
+  },
+  'weapp': {
+    'proxy': 'http://weapp.app.rancher.internal/weapp'
+  },
+  'passport-weapp': {
+    'prefix': '/passport/weapp',
+    'proxy': 'http://passport-weapp.app.rancher.internal/passport'
   },
   'passport-mobile': {
     'prefix': '/passport/mobile',
@@ -39,7 +54,7 @@ module.exports = {
   },
   'passport-guest': {
     'prefix': '/passport/guest',
-    'proxy': 'http://passport-guest-new.app.rancher.internal'
+    'proxy': 'http://passport-guest.app.rancher.internal/passport'
   },
   'passport': {
     'proxy': 'http://passport.app.rancher.internal/passport'
@@ -68,10 +83,13 @@ module.exports = {
   'pay': {
     'proxy': 'http://pay.app.rancher.internal/pay'
   },
-  'agent': {
-    'proxy': 'http://agent.app.rancher.internal/agent'
-  },
   'log': {
     'proxy': 'http://log.app.rancher.internal/log'
+  },
+  'return': {
+    'proxy': 'http://return.app.rancher.internal/return'
+  },
+  'agent': {
+    'proxy': 'http://agent.app.rancher.internal/agent'
   }
 }
