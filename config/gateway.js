@@ -86,6 +86,9 @@ module.exports = {
   'log': {
     'proxy': 'http://log.app.rancher.internal/log'
   },
+  'wordfilter': {
+    'proxy': 'http://wordfilter.app.rancher.internal/wordfilter'
+  },
   'return': {
     'proxy': 'http://return.app.rancher.internal/return'
   },
